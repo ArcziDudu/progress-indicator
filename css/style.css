@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body h1 {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+body .fake-form {
+  margin-bottom: 3em;
+  width: 600px;
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+body .fake-form .page {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  background-color: #fff;
+}
+
+body .fake-form .page:nth-child(even) {
+  background-color: #bbb;
+}
+
+body .fake-form .active-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .progress-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 600px;
+  margin-bottom: 3em;
+}
+
+body .progress-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #ddd;
+  z-index: -5;
+}
+
+body .progress-box .progress-bar {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  background-color: royalblue;
+  z-index: -5;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+body .progress-box .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 48px;
+  color: #333;
+  background-color: #fff;
+  border: 3px solid #ddd;
+  border-radius: 6px;
+}
+
+body .progress-box .active-step {
+  background-color: royalblue;
+  color: #fff;
+  border-color: #17348a;
+}
+
+body .buttons-box .btn {
+  padding: 0.7em 2em;
+  font-size: 18px;
+  color: #fff;
+  background-color: royalblue;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+body .buttons-box .btn:disabled {
+  background-color: #ddd;
+  color: #333;
+  cursor: default;
+}
+/*# sourceMappingURL=style.css.map */
